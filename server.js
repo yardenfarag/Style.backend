@@ -25,6 +25,7 @@ const authRoutes = require('./api/auth/auth.routes')
 const userRoutes = require('./api/user/user.routes')
 const reviewRoutes = require('./api/review/review.routes')
 const productsRoutes = require('./api/product/product.routes')
+const paymentRoutes = require('./api/payment/payment.routes')
 const {setupSocketAPI} = require('./services/socket.service')
 
 // routes
@@ -35,6 +36,7 @@ app.use('/api/auth', authRoutes);
 app.use('/api/user', userRoutes);
 app.use('/api/review', reviewRoutes);
 app.use('/api/product', productsRoutes);
+app.use('/api/checkout', paymentRoutes);
 setupSocketAPI(server);
 
 // Make every server-side-route to match the index.html
