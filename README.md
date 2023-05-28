@@ -1,6 +1,7 @@
 # Style - Online Clothing Store (Backend)
 
 deployed at: https://style-bvr9.onrender.com/
+backend repo at: https://github.com/yardenfarag/Style.backend
 
 Style backend is built with Node.js, MongoDB, bcrypt, Express, and Stripe, providing the necessary server-side functionality for the Style online clothing store.
 
